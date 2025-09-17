@@ -12,7 +12,7 @@ export interface Product {
   providedIn: 'root'
 })
 export class ProductService {
-  private apiUrl = 'api/products'; // Mock via InMemoryDb
+  private apiUrl = 'http://localhost:8080/api/products'; // Mock via InMemoryDb
 
   constructor(private http: HttpClient) {}
 

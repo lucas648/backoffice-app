@@ -6,19 +6,19 @@ import { MatButtonModule } from '@angular/material/button';
 import { AppRoutingModule } from './app-routing.module';
 import { UsersModule } from './users/users.module';
 import { ProductsModule } from './products/products.module';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    UsersModule,
-    ProductsModule
+    AppComponent
   ],
 
   imports: [
     BrowserModule,
     MatCardModule,
     MatButtonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatIconModule
   ],
 
   providers: [],
