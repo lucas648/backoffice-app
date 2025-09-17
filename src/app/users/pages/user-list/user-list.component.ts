@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
   styleUrl: './user-list.component.scss'
 })
 export class UserListComponent {
-
 }

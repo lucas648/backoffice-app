@@ -1,8 +1,29 @@
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService } from './in-memory-data.service';
-import { HttpClientModule } from '@angular/common/http';
+import { MatCardModule } from '@angular/material/card';
+import { NgModule } from '@angular/core';
+import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { MatButtonModule } from '@angular/material/button';
+import { AppRoutingModule } from './app-routing.module';
+import { UsersModule } from './users/users.module';
+import { ProductsModule } from './products/products.module';
 
-imports: [
-  HttpClientModule,
-  HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { delay: 500 })
-]
+@NgModule({
+  declarations: [
+    AppComponent,
+    UsersModule,
+    ProductsModule
+  ],
+
+  imports: [
+    BrowserModule,
+    MatCardModule,
+    MatButtonModule,
+    AppRoutingModule
+  ],
+
+  providers: [],
+
+  bootstrap: [AppComponent]
+
+})
+export class AppModule { }
