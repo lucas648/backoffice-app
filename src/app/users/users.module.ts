@@ -8,14 +8,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 
-import { AppRoutingModule } from '../app-routing.module';
+import { UsersRoutingModule } from './users-routing.module';
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    AppRoutingModule,
+    UsersRoutingModule,
     MatTableModule,
     MatButtonModule,
     MatIconModule,

@@ -9,7 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   standalone: true,
-  imports: [MatCardModule, MatButtonModule, AppRoutingModule],
+  imports: [MatCardModule, MatButtonModule],
 })
 export class AppComponent {
   title = 'backoffice-app';
@@ -17,6 +17,8 @@ export class AppComponent {
   constructor(private router: Router) {}
 
   navigateTo(route: string): void {
-    this.router.navigate([route]);
+    if (typeof window !== 'undefined') {
+      this.router.navigate([route]);
+    }
   }
 }
