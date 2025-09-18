@@ -1,26 +1,28 @@
 <div class="container" style="text-align: center; margin-top: 50px;">
-  <h1>Welcome to the Backoffice App</h1>
-  <p>Choose an option below to manage your data:</p>
+  <h1>Bem vindo ao Backoffice </h1>
+  <p>Escolha a opção que deseja manipular:</p>
 
   <div style="display: flex; justify-content: center; gap: 20px; margin-top: 30px; padding: 16px;">
     <mat-card class="card-style">
-      <mat-card-title>Manage Users</mat-card-title>
+      <mat-card-title>Ver Usuários</mat-card-title>
       <mat-card-content>
-        <p>View and edit the list of users.</p>
+        <p>Veja e edite a lista de usuários.</p>
       </mat-card-content>
       <mat-card-actions>
-        <button class="button-style" (click)="navigateTo('usersList')">Go to Users</button>
+        <button class="button-style" (click)="navigateTo('users')">Usuários</button>
       </mat-card-actions>
     </mat-card>
 
     <mat-card class="card-style">
-      <mat-card-title>Manage Products</mat-card-title>
+      <mat-card-title>Ver Produtos</mat-card-title>
       <mat-card-content>
-        <p>View and edit the list of products.</p>
+        <p>Ver e editar a lista de produtos.</p>
       </mat-card-content>
       <mat-card-actions>
-        <button class="button-style" (click)="navigateTo('productsList')">Go to Products</button>
-      </mat-card-actions>
+        <button class="button-style" (click)="navigateTo('products')">Produtos</button>
+  </mat-card-actions>
     </mat-card>
   </div>
 </div>
+
+<router-outlet></router-outlet>

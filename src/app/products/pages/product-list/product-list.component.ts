@@ -20,7 +20,7 @@ import { MatIconModule } from '@angular/material/icon';
   ],
 })
 export class ProductListComponent implements OnInit {
-  displayedColumns: string[] = ['id', 'name', 'price', 'actions'];
+  displayedColumns: string[] = ['id', 'name', 'price', 'category', 'stock', 'actions'];
   products: Product[] = [];
 
   constructor(private productService: ProductService, private router: Router) {}

@@ -36,7 +36,9 @@ export class ProductFormComponent implements OnInit {
   ngOnInit(): void {
     this.form = this.fb.group({
       name: ['', Validators.required],
-      price: [0, [Validators.required, Validators.min(0.01)]]
+      price: [0, [Validators.required, Validators.min(0.01)]],
+      category: ['', Validators.required],
+      stock: [0, [Validators.required, Validators.min(0)]]
     });
 
     this.productId = this.route.snapshot.params['id'] ? +this.route.snapshot.params['id'] : null;

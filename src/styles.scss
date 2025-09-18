@@ -1,4 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body { height: 100%; background-color: antiquewhite;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.container{
+  padding: 20px;
+}
+
+.button-style{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 12px 12px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.button-container{
+  text-align: center;
+  margin-top: 20px;
+  padding: 16px;
+}
+
+.form-title{
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.form-style{
+  display: flex;
+  padding: 16px;
+  align-items: center;
+}
+
+.input-container{
+  display: flex;
+  margin: 8px;
+}

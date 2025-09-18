@@ -13,7 +13,7 @@ import { MatTableModule } from '@angular/material/table';
 @Component({
   selector: 'app-user-list',
   templateUrl: './user-list.component.html',
-  styleUrl: './user-list.component.scss',
+  styleUrls: ['./user-list.component.scss'],
   standalone: true,
   imports: [
     CommonModule,
@@ -27,7 +27,7 @@ import { MatTableModule } from '@angular/material/table';
   ],
 })
 export class UserListComponent {
-  displayedColumns: string[] = ['id', 'name', 'email', 'actions'];
+  displayedColumns: string[] = ['id', 'name', 'email', 'city', 'age', 'actions'];
   users: any[] = [];
 
   constructor(private userService: UserService, private router: Router) {}

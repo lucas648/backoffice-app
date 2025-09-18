@@ -36,7 +36,9 @@ export class UserFormComponent implements OnInit {
   ngOnInit(): void {
     this.form = this.fb.group({
       name: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]]
+      email: ['', [Validators.required, Validators.email]],
+      city: ['', Validators.required],
+      age: ['', [Validators.required, Validators.min(0)]]
     });
 
     this.userId = this.route.snapshot.params['id'] ? +this.route.snapshot.params['id'] : null;
